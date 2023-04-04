@@ -3,11 +3,13 @@ import React from 'react';
 import ReactDOMClient from 'react-dom/client';
 import {Provider} from 'react-redux';
 import {legacy_createStore as createStore,applyMiddleware} from 'redux';//recommended to use redux-toolkit configureStore in production
+import reduxThunk from 'redux-thunk';
 
 import App from './components/App';
 import reducers from './reducers';
 
-const store = createStore( reducers, {},applyMiddleware());
+
+const store = createStore( reducers, {},applyMiddleware(reduxThunk));
 
 
 
