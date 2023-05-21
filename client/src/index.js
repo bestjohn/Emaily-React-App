@@ -24,6 +24,5 @@ document.querySelector('#root')
 const root = ReactDOMClient.createRoot(document.querySelector('#root'));
 root.render(<Provider store={store}><App /></Provider>);
 
-console.log('STRIPE KEY IS ',process.env.REACT_APP_STRIPE_KEY);
+//console.log('STRIPE KEY IS ',process.env.REACT_APP_STRIPE_KEY);
 console.log('Environment is',process.env.NODE_ENV);
-console.log('hi, did it work?')
