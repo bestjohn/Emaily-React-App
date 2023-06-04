@@ -4,28 +4,9 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 import Header from './Header';
 import Landing from './Landing';
+import Dashboard from './Dashboard';
+import SurveyNew from './surveys/SurveyNew';
 
-const Dashboard = () => <h2>Dashboard</h2>
-const SurveyNew = () => <h2>SurveyNew</h2>
-
-/*
-const App = () => {
-    return (
-        <div className="container">
-            <BrowserRouter>
-            <div>
-                <Header />
-                <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/surveys" element={<Dashboard />} />
-                <Route path="/surveys/new" element={<SurveyNew />} />
-                </Routes>
-            </div>
-            </BrowserRouter>
-        </div>
-    );
-};
-*/
 
 //class based refactor with lifecycle component
 class App extends Component {
